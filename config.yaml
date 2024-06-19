@@ -1,0 +1,41 @@
+# ========================================================================================================= #
+# Define your configuration options here                                                                    #            
+# ========================================================================================================= #
+
+# if multiple datasets are used, put them with ',' separator e.g. ['data/iris.arff, data/iris2.arff'] 
+
+dataset_path: ['']
+num_executions: 1                    # of each dataset
+preprocessing: false
+remove_program_junk: true
+
+GMNBwGA:
+  activate: false
+  population_size: 500
+  num_generations: 300
+  crossover_rate: 0.9
+  mutation_rate: 0.1
+  tournament_winner_rate: 0.75
+
+# ========================================================================================================= #
+
+NNwGA:
+  activate: true 
+  population_size: 500
+  num_generations: 300
+  crossover_rate: 0.9
+  mutation_rate: 0.1
+  tournament_winner_rate: 0.75
+  clear_training_data: true           # clear training data after each dataset
+
+  save_model: true
+  save_path: ./_model_.keras 
+
+  load_model: false
+  load_path: ./_model_.keras 
+
+# ========================================================================================================= #
+
+
+
+        

@@ -1,0 +1,5 @@
+__pycache__/
+time_diff.py 
+*.arff
+.vscode
+_model_.keras
